@@ -1,0 +1,32 @@
+body {
+  background-color: var(--backgroundColor);
+  color: var(--color);
+  font-family: var(--fontFamily);
+  overflow: auto;
+}
+div.boxPerspective {
+  background-color: transparent;
+}
+div:not(div.boxPerspective) {
+  background-color: var(--boxBackgroundColor);
+  background: linear-gradient(45deg, var(--boxBackgroundGradient_leftAccent), var(--boxBackgroundGradient_rightAccent));
+  color: var(--boxColor);
+  border-radius: var(--boxBorderRadius);
+  transform: var(--boxRotateX);
+  margin: 15vmin;
+  padding: var(--boxPadding);
+  box-shadow: var(--boxBoxShadow);
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background-color: #840cb8;
+  transition: background-color 2.5s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #520772;
+}

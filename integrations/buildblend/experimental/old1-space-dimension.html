@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        overflow: hidden;
+        width: 173858.267719px;
+        height: 173858.267719px;
+      }
+      .object {
+        cursor: pointer;
+      }
+      .object .object-infobox {
+        opacity: 0%;
+        transition: opacity 1s;
+      }
+      .object:hover .object-infobox {
+        opacity: 100%;
+      }
+    </style>
+  </head>
+
+  <body id="bodyElement">
+
+    <script 
+      id="buildblend"
+      src="../buildblend-0.0.2.js">
+    </script>
+    <script>
+      buildblend.init({
+        enabled: true,
+        appName: "Space Dimension",
+        appVersion: "0.0.1",
+        recordLoadTime: true,
+        logInit: true
+      });
+    </script>
+    <script src="js/buildblend.my.js"></script>
+
+  </body>
+
+</html>

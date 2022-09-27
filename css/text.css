@@ -1,0 +1,21 @@
+a {
+  color: var(--linkColor);
+  cursor: pointer;
+  transition: color 1s;
+}
+a:hover {
+  color: var(--linkColor_hover);
+}
+a:active, a:focus {
+  color: var(--linkColor_active);
+}
+span {
+  font-weight: 800;
+  border-radius: 5px;
+  padding: 2.5px;
+  background-color: tomato;
+  color: white;
+}
+.pixelatedText {
+  font-family: var(--pixelatedFontFamily);
+}

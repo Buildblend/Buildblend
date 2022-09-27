@@ -1,0 +1,27 @@
+body {
+  overflow: hidden;
+  height: 173858.267719px;
+  width: 173858.267719px;
+}
+.backgroundStars1,
+.backgroundStars2,
+.backgroundStars3,
+.backgroundStars4 {
+  user-select: none;
+  animation-name: starTwinkle;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  position: fixed;
+  transform-origin: center center;
+}
+.backgroundStars2 {  animation-duration: 15s; animation-delay: 500ms;  }
+.backgroundStars3 {  animation-duration: 20s; animation-delay: 500ms;  }
+.backgroundStars4 {  animation-duration: 25s; animation-delay: 500ms;  }
+.backgroundStars5 {  animation-duration: 30s; animation-delay: 500ms;  }
+@keyframes starTwinkle {
+  0%  {  filter: brightness(10%); transform: rotate(0deg); width: 16px; height: 16px;  }
+  25% {  filter: brightness(245%); transform: rotate(90deg); width: 24px; height: 24px;  }
+  50% {  filter: brightness(500%); transform: rotate(180deg); width: 32px; height: 32px;  }
+  75% {  filter: brightness(245%); transform: rotate(270deg); width: 24px; height: 24px;  }
+  100% {  filter: brightness(10%); transform: rotate(360deg); width: 16px; height: 16px;  }
+}

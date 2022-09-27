@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=0.1, maximum-scale=10, user-scalable=1">
+    <meta name="abstract" content="Buildblend: Swift Technology Further">
+    <meta name="author" content="Buildblend">
+    <meta name="copyright" content="Buildblend">
+    <meta name="description" content="Buildblend">
+    <meta name="distribution" content="Global">
+    <meta name="keywords" content="buildblend, build, blend, swift technology further, programming integrations, coding integrations, technology company, technology companies, buildblend.js, a good website">
+    <meta name="language" content="en">
+    <meta name="news-keywords" content="buildblend, build, blend, swift technology further, programming integrations, coding integrations, technology company, technology companies, buildblend.js, a good website">
+    <meta name="rating" content="general">
+    <meta name="revisit-after" content="1 hour">
+    <meta name="slurp" content="noydir">
+    <meta name="web-author" content="Buildblend">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="imagetoolbar" content="on">
+    <title>Buildblend</title>
+    <link href="css/imports.css" rel="stylesheet" type="text/css" />
+    <link href="css/themes.css" rel="stylesheet" type="text/css" />
+    <link href="css/text.css" rel="stylesheet" type="text/css" />
+    <link href="css/buttons.css" rel="stylesheet" type="text/css" />
+    <link href="css/inputs.css" rel="stylesheet" type="text/css" />
+    <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body id="bodyElement" class="darkTheme">
+    <nav id="navbar">
+      <a>Home</a>
+      <a>Integrations</a>
+      <a>Dashboard <span class="redTag">BETA</span></a>
+    </nav>
+
+    <div id="boxPerspective1" class="boxPerspective">
+      <div id="homeIntro">
+        <h1 class="pixelatedText">Buildblend!</h1>
+        <p>The company which brings technology futher: performs multiple tasks you desire of. Contains various tools and products, yet forms community and culture with its diverse range of features it offers.</p>
+      </div>
+    </div>
+
+    <script id="buildblend" src="integrations/buildblend/buildblend-0.3.0.js"></script>
+    <script>
+      buildblend.init({
+        enabled: true,
+        appName: "Buildblend",
+        appVersion: "0.1.0",
+        recordLoadTime: true,
+        logInit: true
+      });
+
+      buildblend.extensions.install("BuildblendDebugger", "integrations/buildblend/extensions/debugger-0.0.2.js", "body", "sors");
+    </script>
+    <script src="css/buildblend.css.js"></script>
+  </body>
+
+</html>
