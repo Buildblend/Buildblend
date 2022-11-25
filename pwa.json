@@ -29,7 +29,7 @@
     }
   ],
   "id": "/?source=pwa",
-  "start_url": "/?source=pwa",
+  "start_url": "/",
   "background_color": "#100840",
   "display": "standalone",
   "scope": "",
