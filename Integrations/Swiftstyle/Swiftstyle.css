@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: Cascadia Mono;
-  src: url('../Cascadia Code/CascadiaCode-Regular-VTT.ttf');
+  src: url('../../Fonts/CascadiaCode-Regular-VTT.ttf');
 }
 
 [Swiftstyle*="[Enhance]"],
