@@ -1,0 +1,13 @@
+.blinkingText {
+  opacity: 1;
+  animation-name: blinkingText;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes blinkingText {
+  from {  opacity: 1;  }
+  to {  opacity: 0;  }
+}

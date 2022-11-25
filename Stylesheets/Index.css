@@ -1,0 +1,59 @@
+* {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bodyBackgroundColor);
+  padding: var(--bodyPadding);
+}
+
+::selection:not(.first_section h1) {
+  background-color: var(--selectionBackgroundColor);
+  color: var(--selectionColor);
+}
+
+.first_section {
+  margin-top: 10%;
+}
+
+nav {
+  background-color: var(--navbarBackgroundColor);
+  color: var(--navbarColor);
+  padding: var(--navbarPadding);
+  position: fixed;
+  width: 100%;
+  height: 2.5%;
+  top: 0;
+  left: 0;
+  user-select: none;
+  text-align: center;
+  z-index: 65536;
+}
+
+nav a:not(:first-child) {
+  margin-left: 5%;
+  font-family: var(--navbarFontFamily);
+  font-size: var(--navbarFontSize);
+}
+
+nav:first-child {
+  font-family: var(--navbarFontFamily);
+  font-size: var(--navbarFontSize);
+}
+
+footer {
+  background-color: var(--navbarBackgroundColor);
+  color: var(--navbarColor);
+  padding: var(--navbarPadding);
+  position: relative;
+  width: calc(100% + 77.5px);
+  bottom: -67.5px;
+  left: -67.5px;
+  user-select: none;
+  text-align: center;
+  z-index: 65535;
+}

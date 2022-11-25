@@ -1,0 +1,208 @@
+/*
+
+  Buildblend Swiftstyle
+  Version 1.0.0
+
+*/
+
+:root {
+  --Swiftstyle_Version: "1.0.0";
+  --Swiftstyle_Enhance_BodyPadding: 5vmin;
+  --Swiftstyle_Enhance_BorderRadius: 10px;
+  --Swiftstyle_Enhance_TransitionDuration: 1s;
+  --Swiftstyle_CLI_BackgroundColor: #000000;
+  --Swiftstyle_CLI_Color: #00FF00;
+  --Swiftstyle_CLI_TextShadowColor: #00FF00;
+  --Swiftstyle_CLI_FontFamily: 'Cascadia Mono', monospace;
+  --Swiftstyle_CLI_FontSize: 16px;
+  --Swiftstyle_CLI_SelectionBackgroundColor: #00FF00;
+  --Swiftstyle_CLI_SelectionColor: #000000;
+}
+
+@font-face {
+  font-family: Cascadia Mono;
+  src: url('../Cascadia Code/CascadiaCode-Regular-VTT.ttf');
+}
+
+[Swiftstyle*="[Enhance]"],
+[Swiftstyle*="[Enhance]"] * {
+  outline: none;
+}
+
+[Swiftstyle*="[Enhance]"],
+[Swiftstyle*="[Enhance]"] div,
+[Swiftstyle*="[Enhance]"] section,
+[Swiftstyle*="[Enhance]"] input {
+  padding: var(--Swiftstyle_Enhance_BodyPadding);
+  border-radius: var(--Swiftstyle_Enhance_BorderRadius);
+}
+
+[Swiftstyle*="[Enhance]"] h1 {
+  font-size: 64px;
+}
+
+[Swiftstyle*="[Enhance]"] h2 {
+  font-size: 56px;
+}
+
+[Swiftstyle*="[Enhance]"] h3 {
+  font-size: 48px;
+}
+
+[Swiftstyle*="[Enhance]"] h4 {
+  font-size: 32px;
+}
+
+[Swiftstyle*="[Enhance]"] h5 {
+  font-size: 24px;
+}
+
+[Swiftstyle*="[Enhance]"] h6 {
+  font-size: 18px;
+}
+
+[Swiftstyle*="[SmoothTransition]"]:not(body),
+[Swiftstyle*="[SmoothTransition]"] button,
+[Swiftstyle*="[SmoothTransition]"] a {
+  transition: background var(--Swiftstyle_Enhance_TransitionDuration), background-color var(--Swiftstyle_Enhance_TransitionDuration), color var(--Swiftstyle_Enhance_TransitionDuration);
+}
+
+[Swiftstyle*="[Mode:CLI]"] {
+  background-color: var(--Swiftstyle_CLI_BackgroundColor);
+  color: var(--Swiftstyle_CLI_Color);
+  text-shadow: 0px 0px 10px var(--Swiftstyle_CLI_TextShadowColor);
+  font-family: var(--Swiftstyle_CLI_FontFamily);
+  font-size: var(--Swiftstyle_CLI_FontSize);
+}
+
+[Swiftstyle*="[Mode:CLI]"] input {
+  border: none;
+  background-color: var(--Swiftstyle_CLI_Color);
+  color: var(--Swiftstyle_CLI_BackgroundColor);
+  padding: 15px;
+  border-radius: var(--Swiftstyle_Enhance_BorderRadius);
+  font-family: var(--Swiftstyle_CLI_FontFamily);
+  font-size: var(--Swiftstyle_CLI_FontSize);
+}
+
+[Swiftstyle*="[Mode:CLI]"]::selection,
+[Swiftstyle*="[Mode:CLI]"] *::selection {
+  background-color: var(--Swiftstyle_CLI_SelectionBackgroundColor);
+  color: var(--Swiftstyle_CLI_SelectionColor);
+}
+
+[Swiftstyle*="[Filter:Blur]"] {
+  filter: blur(5px);
+}
+
+[Swiftstyle*="[Filter:Blur:Low]"] {
+  filter: blur(2.5px);
+}
+
+[Swiftstyle*="[Filter:Blur:High]"] {
+  filter: blur(7.5px);
+}
+
+[Swiftstyle*="[Filter:Brightness:Darkest]"] {
+  filter: brightness(12.5%);
+}
+
+[Swiftstyle*="[Filter:Brightness:Darker]"] {
+  filter: brightness(25%);
+}
+
+[Swiftstyle*="[Filter:Brightness:Dark]"] {
+  filter: brightness(50%);
+}
+
+[Swiftstyle*="[Filter:Brightness:Normal]"] {
+  filter: brightness(100%);
+}
+
+[Swiftstyle*="[Filter:Brightness:Bright]"] {
+  filter: brightness(150%);
+}
+
+[Swiftstyle*="[Filter:Brightness:Brighter]"] {
+  filter: brightness(200%);
+}
+
+[Swiftstyle*="[Filter:Brightness:Brightest]"] {
+  filter: brightness(250%);
+}
+
+[Swiftstyle*="[Templates:Button]"],
+[Swiftstyle*="[Group:Rows]"] *,
+[Swiftstyle*="[Group:Columns]"] * {
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+[Swiftstyle*="[Templates:Link]"] {
+  text-decoration: none;
+}
+
+[Swiftstyle*="[Group:Rows]"] {
+  display: flex;
+  flex-direction: row;
+}
+
+[Swiftstyle*="[Group:Rows]"] *:not(:first-child, :last-child) {
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+}
+
+[Swiftstyle*="[Group:Rows]"] *:first-child {
+  border-radius: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+[Swiftstyle*="[Group:Rows]"] *:last-child {
+  border-radius: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+[Swiftstyle*="[Group:Columns]"] {
+  display: flex;
+  flex-direction: column;
+}
+
+[Swiftstyle*="[Group:Columns]"] *:not(:first-child, :last-child) {
+  margin-top: 0;
+  border-radius: 0;
+}
+
+[Swiftstyle*="[Group:Columns]"] *:first-child {
+  border-radius: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+[Swiftstyle*="[Group:Columns]"] *:last-child {
+  border-radius: 0;
+  margin-top: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+[Swiftstyle*="[Flexbox:Rows]"] {
+  display: flex;
+  flex-direction: row;
+}
+
+[Swiftstyle*="[Flexbox:Rows]"] *:not(:first-child) {
+  margin-left: 1%;
+}
+
+[Swiftstyle*="[Flexbox:Columns]"] {
+  display: flex;
+  flex-direction: column;
+}
+
+[Swiftstyle*="[Flexbox:Columns]"] *:not(:first-child) {
+  margin-top: 1%;
+}
