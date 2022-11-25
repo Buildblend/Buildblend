@@ -1,0 +1,58 @@
+:root {
+
+  --colorScheme1: #FFFFFF;
+  --colorScheme2: #122448;
+  --colorScheme2_opacity: #12244880;
+  --colorScheme3: #162E5F;
+  --colorScheme4: #17387C;
+  --colorScheme4_opacity: #17387C80;
+  --colorScheme5: #1A4292;
+  --colorScheme6: #1C479E;
+  --colorScheme7: #2557bb;
+  --colorScheme8: #3067d4;
+  --colorScheme9: #FFA500;
+  --colorScheme10: #800080;
+  --colorScheme11: #0051FF;
+
+  --bodyBackgroundColor: var(--colorScheme3);
+  --bodyColor: var(--colorScheme1);
+  --bodyFontFamily: 'Poppins', sans-serif;
+  --bodyFontWeight: 400;
+  --bodyPadding: 2.5%;
+  --bodyFontSize: 2vmin;
+  --monospace: 'Incolsolata', monospace;
+
+  --headingFontFamily: 'Montserrat', sans-serif;
+  --headingFontWeight: 900;
+  --h1FontSize: 10vmin;
+  --h2FontSize: 8vmin;
+  --h3FontSize: 6vmin;
+  --h4FontSize: 5vmin;
+  --h5FontSize: 3vmin;
+  --h6FontSize: 2vmin;
+  --headingMinorFontSize: 5vmin;
+
+  --imageBorderRadius: 20px;
+
+  --divBackgroundColor: var(--colorScheme4_opacity);
+  --divColor: var(--colorScheme1);
+  --divPadding: 5%;
+  --divBorderRadius: 15px;
+
+  --footerBackgroundColor: var(--colorScheme2);
+  --footerColor: var(--colorScheme1);
+  --footerPadding: 2.5%;
+  --footerHeight: 10%;
+
+  --navbarBackgroundColor: var(--colorScheme2_opacity);
+  --navbarColor: var(--colorScheme1);
+  --navPadding: 2.5vmin;
+  --navContentMarginLeft: 2.5vmin;
+  --navbarColor_hover: var(--colorScheme7);
+  --navbarColor_active: var(--colorScheme8);
+
+  --buttonBackgroundColor: var(--colorScheme7);
+  --buttonColor: var(--colorScheme1);
+  --buttonBorderRadius: 15px;
+
+}

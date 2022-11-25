@@ -1,0 +1,51 @@
+:root {
+  --slideDown_iterationCount: 0;
+}
+.slideUp {
+  opacity: 1;
+  animation-name: slideUp;
+  animation-duration: 1500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+.toSlide {
+  opacity: 0;
+  position: relative;
+  animation-name: slideDown;
+  animation-duration: 500ms;
+  animation-iteration-count: var(--slideDown_iterationCount);
+  animation-timing-function: linear;
+}
+
+@keyframes starsAnimation {
+  from {
+    filter: brightness(50%);
+    transform: rotate(30deg);
+    width: 1vmin;
+    height: 1vmin;
+  }
+  to {
+    filter: brightness(200%);
+    transform: rotate(90deg);
+    width: 2.5vmin;
+    height: 2.5vmin;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
