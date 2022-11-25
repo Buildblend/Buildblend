@@ -3,4 +3,4 @@ Disallow: /Fonts/
 Disallow: /Icons/
 Disallow: /Stylesheets/
 Disallow: /Scripts/
-Sitemap: http://buildblend.cf/sitemap.xml
+Sitemap: https://buildblend.cf/sitemap.xml
