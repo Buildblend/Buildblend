@@ -1,24 +1,24 @@
 /*
 
-  Provider for WebVitals.
+  Provider for WebCore.
 
 */
 
-var WebVitalsProvider = {
+var WebCoreProvider = {
   AvailableVersions: [`0.0.0`],
 };
 
-WebVitalsProvider.Latest = WebVitalsProvider.AvailableVersions[0];
+WebCoreProvider.Latest = WebCoreProvider.AvailableVersions[0];
 
-WebVitalsProvider.Install = (Version, Minifed) => {
-  if (typeof WebVitals != 'undefined') return 'ALREADY_INSTALLED';
+WebCoreProvider.Install = (Version, Minifed) => {
+  if (typeof WebCore != 'undefined') return 'ALREADY_INSTALLED';
 
-  var availVersions = WebVitalsProvider.AvailableVersions;
+  var availVersions = WebCoreProvider.AvailableVersions;
 
   var hasFound = false;
   for (let i = 0; i < availVersions.length; i++) {
     if (Version == `latest`) {
-      Version = WebVitalsProvider.Latest;
+      Version = WebCoreProvider.Latest;
       hasFound = true;
     } else if (Version == availVersions[i]) {
       hasFound = true;
@@ -32,33 +32,34 @@ WebVitalsProvider.Install = (Version, Minifed) => {
   } else {
     minified = ``;
   }
-  var filename = `WebVitals.${Version}${minified}.js`;
+  var filename = `WebCore.${Version}${minified}.js`;
 
   var NewDOMElement = document.createElement("script");
-  NewDOMElement.id = `webvitals_script`;
-  NewDOMElement.className = `buildblendScripts`;
+  NewDOMElement.id = `WebCore_script`;
+  NewDOMElement.className = `WebCore_Sources`;
   NewDOMElement.src = filename;
   NewDOMElement.type = `text/javascript`;
-  var NewDOMComment = document.createComment(`Buildblend WebVitals ${Version}!`);
+  var NewDOMComment = document.createComment(`Buildblend WebCore ${Version}!`);
   NewDOMElement.appendChild(NewDOMComment);
   document.body.appendChild(NewDOMElement);
 
-  WebVitalsProvider.AttachProvider(filename);
+  WebCoreProvider.AttachProvider(filename);
 
   return 1;
 };
 
-WebVitalsProvider.AttachProvider = (Filename) => {
+WebCoreProvider.AttachProvider = (Filename) => {
   var xDone = false;
   var x = setInterval(function() {
-    if (typeof WebVitals != 'undefined') {
-      WebVitals.Provider = {
-        Name: 'Official Buildblend WebVitals Provider',
-        Shortname: 'WebVitals Provider',
+    if (typeof WebCore != 'undefined') {
+      WebCore.Provider = {
+        Name: 'Official Buildblend WebCore Provider',
+        Shortname: 'WebCore Provider',
         Authors: ['Buildblend'],
         Request: Filename,
         RequestTime: new Date()
       };
+      WebCore.InstallCSSFile();
       xDone = true;
       clearInterval(x);
     }
