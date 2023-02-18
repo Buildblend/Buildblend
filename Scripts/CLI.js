@@ -1,1 +1,0 @@
-var d=document,b=d.body,h=d.head,a=`background`,c=`color`,l=`#000000`,g=`#00FF00`,n=d.createElement("style");n.innerHTML=`*{outline:none}body{${a}:${l};${c}:${g};font-family:monospace;font-size:16px;padding:15px;text-shadow:0px 0px 10px ${g}}::selection{${a}:${g};${c}:${l};text-shadow:0px 0px 10px ${l}}`;h.appendChild(n);d.normalize();

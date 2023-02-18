@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /Fonts/
-Disallow: /Icons/
-Disallow: /Stylesheets/
-Disallow: /Scripts/
-Sitemap: https://buildblend.cf/sitemap.xml
