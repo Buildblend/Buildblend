@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins Medium';
+  src: url(../Fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url(../Fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url(../Fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins Black';
+  src: url(../Fonts/Poppins/Poppins-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../Fonts/Montserrat/static/Montserrat.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat Black';
+  src: url(../Fonts/Montserrat/static/Montserrat-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url(../Fonts/Source_Code_Pro/static/SourceCodePro-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Source Code Pro Black';
+  src: url(../Fonts/Source_Code_Pro/static/SourceCodePro-Black.ttf);
+}

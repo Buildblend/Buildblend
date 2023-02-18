@@ -1,0 +1,97 @@
+* {
+  font-family: var(--BodyFontFamily);
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--BodyFontSize);
+  padding: 2.5%;
+}
+
+::selection {
+  background: var(--Color2);
+  color: var(--Color1);
+}
+
+img {
+  float: right;
+  width: calc(100% / 3 * 1.25);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--HeadingFontFamily);
+}
+
+h1 {  font-size: var(--H1FontSize);  }
+h2 {  font-size: var(--H2FontSize);  }
+h3 {  font-size: var(--H3FontSize);  }
+h4 {  font-size: var(--H4FontSize);  }
+h5 {  font-size: var(--H5FontSize);  }
+h6 {  font-size: var(--H6FontSize);  }
+
+h1.MainHeading {
+  font-size: 72px;
+  background: -webkit-linear-gradient(45deg, #0084ff, #ff38d4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+}
+
+h1.MainHeading::selection {
+  background: transparent;
+}
+
+div {
+  background: var(--ColorDarken);
+  color: var(--Color1);
+  padding: 2.5%;
+  border-radius: 30px;
+}
+
+a {
+  color: var(--Color4);
+  text-decoration: none;
+  transition: 500ms;
+}
+
+a:hover {
+  filter: brightness(calc(100% / 3 * 2.5));
+}
+
+a:active,
+a:focus {
+  filter: brightness(calc(100% / 3 * 2));
+}
+
+button {
+  background: var(--Color5);
+  color: var(--Color1);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  transition: 500ms;
+}
+
+button:hover {
+  filter: brightness(calc(100% / 3 * 2.5));
+}
+
+button:active,
+button:focus {
+  filter: brightness(calc(100% / 3 * 2));
+}
+
+a ~ a {
+  position: relative;
+  top: 5px;
+}

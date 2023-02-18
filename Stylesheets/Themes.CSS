@@ -1,0 +1,24 @@
+:root {
+
+  --Color1: #dae4ff; /* Text */
+  --Color2: #232db9; /* Background on Selection */
+  --Color3: #0040b6;
+  --Color4: #ca00b9; /* Links */
+  --Color5: #7a2701; /* Buttons */
+  --Color6: #202020; /* Body Background */
+  --ColorDarken: #FFFFFF10;
+
+  --BodyBackground: var(--Color6);
+  --BodyColor: var(--Color1);
+  --BodyFontFamily: 'Poppins', 'Montserrat', sans-serif;
+  --BodyFontSize: 1.75vmin;
+
+  --HeadingFontFamily: 'Montserrat Black', 'Poppins Black', sans-serif;
+  --H1FontSize: 6vmin;
+  --H2FontSize: 4vmin;
+  --H3FontSize: 4.5vmin;
+  --H4FontSize: 3.5vmin;
+  --H5FontSize: 2.5vmin;
+  --H6FonSize: 2vmin;
+
+}

@@ -1,0 +1,72 @@
+* {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--BodyBackground);
+  color: var(--Color1);
+  animation-name: BodyBackgroundSpectrum;
+  animation-duration: 30s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+nav {
+  background: var(--ColorDarken);
+  color: var(--Color1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2.5%;
+  text-align: center;
+}
+
+#Top {
+  margin-top: 5%;
+}
+
+.FlexboxRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.FlexboxRow.ReversedRow {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.FlexboxRow div {
+  text-align: center;
+}
+
+.FlexboxRow div div {
+  padding: 7.5%;
+}
+
+.FlexboxRow div div button {
+  width: 75%;
+}
+
+.FlexboxRow div:not(:first-child) {
+  margin-left: 2.5%;
+}
+
+.FlexboxRow.ReversedRow div:first-child {
+  margin-left: 2.5%;
+}
+
+.FlexboxRow div:first-child {
+  max-width: 90%;
+  width: 90%;
+}
+
+.FlexboxRow.EquivalentRow_3 div {
+  max-width: calc(100% / 3);
+  width: calc(100% / 3);
+}

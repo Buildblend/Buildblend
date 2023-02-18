@@ -1,0 +1,9 @@
+@keyframes BodyBackgroundSpectrum {
+  0% {  background: rgb(5, 0, 0);  }
+  16.6666666667% {  background: rgb(20, 13, 0);  }
+  33.3333333333% {  background: rgb(8, 8, 0);  }
+  50% {  background: rgb(0, 10, 0);  }
+  66.6666666667% {  background: rgb(0, 0, 24);  }
+  83.3333333333% {  background: rgb(12, 0, 12);  }
+  100% {  background: rgb(3, 0, 3);  }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<News>
+  <Item>
+    <Timestamp>2023-02-11T18:04:23+05:30</Timestamp>
+    <Description>Microsoft joins in the ChatGPT battle and works on its own AI chatbot.</Description>
+  </Item>
+  <Item>
+    <Timestamp>2023-02-04T19:01:00+05:30</Timestamp>
+    <Description>Google helds a public event on Aritifical Intelligence on 8th February 2023.</Description>
+  </Item>
+  <Item>
+    <Timestamp>2023-02-04T19:01:00+05:30</Timestamp>
+    <Description>Google CEO Sundar Pichai said that Google will make its ChatGPT rival publicly available soon.</Description>
+  </Item>
+</News>
